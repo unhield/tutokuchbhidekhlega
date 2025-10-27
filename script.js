@@ -1,3 +1,8 @@
+console.log('Script loading started');
+window.addEventListener('error', function(e) {
+    console.error('JavaScript Error:', e.error);
+});
+
 // UNHIELD Store - Complete JavaScript with Google Analytics Integration
 // Real product data and advanced carousel functionality
 
