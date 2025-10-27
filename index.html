@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNHIELD - Having Adult Money? Check These Out!</title>
+    <meta name="description" content="Premium Gothic & Medieval Collection - Handpicked quality products for discerning customers">
+    <meta name="keywords" content="gothic, medieval, drinkware, collectibles, skull mugs, dragon goblets">
+    <meta name="author" content="UNHIELD">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="UNHIELD - Having Adult Money? Check These Out!">
+    <meta property="og:description" content="Premium Gothic & Medieval Collection - Handpicked quality products">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unhield.us.to">
+    <meta property="og:image" content="https://unhield.us.to/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UNHIELD - Having Adult Money? Check These Out!">
+    <meta name="twitter:description" content="Premium Gothic & Medieval Collection">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9RB6PJ7M24"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-9RB6PJ7M24', {
+            page_title: 'UNHIELD Store',
+            page_location: window.location.href,
+            send_page_view: true
+        });
+        
+        // Debug logging for analytics
+        console.log('Google Analytics initialized with ID: G-9RB6PJ7M24');
+    </script>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏰</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏰</text></svg>">
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="msapplication-TileColor" content="#1e3a8a">
+    
+    <!-- Debug console logging -->
+    <script>
+        console.log('UNHIELD Store - Page loading started');
+        console.log('Current URL:', window.location.href);
+        console.log('User Agent:', navigator.userAgent);
+        
+        // Error tracking
+        window.addEventListener('error', function(e) {
+            console.error('JavaScript Error:', e.error);
+            console.error('Error details:', {
+                message: e.message,
+                filename: e.filename,
+                lineno: e.lineno,
+                colno: e.colno
+            });
+        });
+        
+        // Resource loading tracking
+        window.addEventListener('load', function() {
+            console.log('Page fully loaded');
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>UNHIELD</h1>
+                <span class="logo-badge">Premium</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Having Adult Money? Check These Out!</h1>
+                <p class="hero-subtitle">Premium Gothic & Medieval Collection - Handpicked for You</p>
+                <div class="trust-badges">
+                    <span class="badge">✓ Quality Assured</span>
+                    <span class="badge">✓ Secure Shopping</span>
+                    <span class="badge">✓ Fast Delivery</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Loading premium products...</p>
+                </div>
+                <div class="products-grid" id="productsGrid" style="display: none;">
+                    <!-- Products will be loaded by JavaScript -->
+                </div>
+                
+                <!-- Fallback content if JavaScript is disabled -->
+                <noscript>
+                    <div class="no-js-message">
+                        <h2>JavaScript Required</h2>
+                        <p>This website requires JavaScript to display products. Please enable JavaScript in your browser and refresh the page.</p>
+                        <p>Our premium Gothic & Medieval collection features:</p>
+                        <ul>
+                            <li>3D Skull Drinking Mugs</li>
+                            <li>Medieval Dragon Tankards</li>
+                            <li>Fantasy Wine Goblets</li>
+                            <li>Gothic Collectibles</li>
+                            <li>Tactical Drinkware</li>
+                        </ul>
+                    </div>
+                </noscript>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 UNHIELD. Premium Gothic & Medieval Collection.</p>
+            <p style="margin-top: 8px; font-size: 12px; opacity: 0.8;">
+                Discover unique drinkware and collectibles for the modern connoisseur
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript - Load at the end for better performance -->
+    <script>
+        // Immediate debug logging
+        console.log('About to load script.js');
+        
+        // Check if script file exists before loading
+        function loadScript() {
+            const script = document.createElement('script');
+            script.src = 'script.js';
+            script.async = false; // Load synchronously for better error handling
+            
+            script.onload = function() {
+                console.log('script.js loaded successfully');
+            };
+            
+            script.onerror = function() {
+                console.error('Failed to load script.js');
+                document.getElementById('loading').innerHTML = '<p style="color: red;">Error: JavaScript file not found. Please check if script.js is uploaded correctly.</p>';
+            };
+            
+            document.head.appendChild(script);
+        }
+        
+        // Load script when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', loadScript);
+        } else {
+            loadScript();
+        }
+    </script>
+</body>
+</html>
